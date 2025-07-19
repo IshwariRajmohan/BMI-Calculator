@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+.input-group input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 80%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3399ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.gauge {
+  position: relative;
+  margin: 40px auto 20px;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: linear-gradient(to right, #f66 0%, #fc3 25%, #6f6 50%, #fc3 75%, #f66 100%);
+  overflow: hidden;
+}
+
+.needle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  height: 100px;
+  background: black;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  transition: transform 1s ease;
+}
+
+.bmi-value {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#resultText {
+  font-size: 16px;
+  font-weight: bold;
+}
